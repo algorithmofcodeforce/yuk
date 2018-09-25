@@ -1,0 +1,11 @@
+l=[]
+for i in range(int(input())):
+    number1,number2=map(int,input().split())
+    n=number1*number2
+    while number2!=0:
+        x=number1
+        number1=number2
+        number2=x%number2
+    l.append(int(n/number1))
+for j in range(len(l)):
+    print(l[j])
