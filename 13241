@@ -1,0 +1,7 @@
+number1,number2=map(int,input().split())
+n=number1*number2
+while number2!=0:
+        x=number1
+        number1=number2
+        number2=x%number2
+print(int(n/number1))
